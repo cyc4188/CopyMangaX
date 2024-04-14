@@ -19,7 +19,6 @@
         app:layout_constraintEnd_toStartOf="@+id/close"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <!--
     <TextView
         android:id="@+id/timer"
         android:layout_width="wrap_content"
@@ -31,7 +30,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:text="1"
         tools:visibility="visible" />
--->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/close"
         style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
@@ -128,7 +126,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/icon"
                 tools:text="Hello Guys..." />
 
-            <!--<com.google.android.material.divider.MaterialDivider
+            <com.google.android.material.divider.MaterialDivider
                 android:id="@+id/divider2"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/base_dp1"
@@ -136,7 +134,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/icon"
                 app:layout_constraintEnd_toEndOf="parent" />
--->
 
             <com.google.android.material.divider.MaterialDivider
                 android:id="@+id/divider3"
@@ -184,39 +181,39 @@
                 app:layout_constraintTop_toTopOf="@+id/loading"
                 tools:visibility="gone" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/group1"
-                style="@style/Widget.Material3.Button.TonalButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/base_dp10"
-                android:clickable="false"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:visibility="gone"
-                app:cornerRadius="@dimen/base_dp10"
-                app:layout_constraintEnd_toEndOf="@+id/content"
-                app:layout_constraintStart_toStartOf="@+id/content"
-                app:layout_constraintTop_toBottomOf="@+id/content"
-                tools:visibility="visible" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/group2"
-                style="@style/Widget.Material3.Button.TonalButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/base_dp10"
-                android:clickable="false"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:visibility="gone"
-                app:cornerRadius="@dimen/base_dp10"
-                app:layout_constraintEnd_toEndOf="@+id/content"
-                app:layout_constraintStart_toStartOf="@+id/content"
-                app:layout_constraintTop_toBottomOf="@+id/group1"
-                tools:visibility="visible" />
+            <!-- <com.google.android.material.button.MaterialButton -->
+            <!--     android:id="@+id/group1" -->
+            <!--     style="@style/Widget.Material3.Button.TonalButton" -->
+            <!--     android:layout_width="0dp" -->
+            <!--     android:layout_height="wrap_content" -->
+            <!--     android:layout_gravity="center" -->
+            <!--     android:layout_marginTop="@dimen/base_dp10" -->
+            <!--     android:clickable="false" -->
+            <!--     android:gravity="center" -->
+            <!--     android:textStyle="bold" -->
+            <!--     android:visibility="gone" -->
+            <!--     app:cornerRadius="@dimen/base_dp10" -->
+            <!--     app:layout_constraintEnd_toEndOf="@+id/content" -->
+            <!--     app:layout_constraintStart_toStartOf="@+id/content" -->
+            <!--     app:layout_constraintTop_toBottomOf="@+id/content" -->
+            <!--     tools:visibility="visible" /> -->
+            <!---->
+            <!-- <com.google.android.material.button.MaterialButton -->
+            <!--     android:id="@+id/group2" -->
+            <!--     style="@style/Widget.Material3.Button.TonalButton" -->
+            <!--     android:layout_width="0dp" -->
+            <!--     android:layout_height="wrap_content" -->
+            <!--     android:layout_gravity="center" -->
+            <!--     android:layout_marginTop="@dimen/base_dp10" -->
+            <!--     android:clickable="false" -->
+            <!--     android:gravity="center" -->
+            <!--     android:textStyle="bold" -->
+            <!--     android:visibility="gone" -->
+            <!--     app:cornerRadius="@dimen/base_dp10" -->
+            <!--     app:layout_constraintEnd_toEndOf="@+id/content" -->
+            <!--     app:layout_constraintStart_toStartOf="@+id/content" -->
+            <!--     app:layout_constraintTop_toBottomOf="@+id/group1" -->
+            <!--     tools:visibility="visible" /> -->
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/readed"
@@ -234,7 +231,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/content"
                 app:layout_constraintStart_toStartOf="@+id/content"
-                app:layout_constraintTop_toBottomOf="@+id/group2"
+                app:layout_constraintTop_toBottomOf="@+id/content"
                 tools:visibility="visible" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

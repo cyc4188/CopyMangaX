@@ -455,7 +455,7 @@ class ContainerFragment : BaseMviFragment<MainFragmentContainerBinding>() {
     private fun MainNoticeLayoutBinding.loadForceJob(noticeResp: MainNoticeResp) {
         title.text = noticeResp.mForceContent
         val forceTime = noticeResp.mForceTime
-        if (forceTime == 0) {
+        if (true) {
             readed.isClickable = true
             return
         }
@@ -633,7 +633,7 @@ class ContainerFragment : BaseMviFragment<MainFragmentContainerBinding>() {
             mEvent.setBoolean("INIT_UPDATE", true)
         }
         mEvent.setBoolean("INIT_UPDATE", true)
-        if (isHidden) return
+        if (true) return
         val updateBinding = MainUpdateLayoutBinding.inflate(layoutInflater)
         val updateDialog = mContext.newMaterialDialog { dialog ->
             dialog.setCancelable(false)
@@ -719,7 +719,7 @@ class ContainerFragment : BaseMviFragment<MainFragmentContainerBinding>() {
         binding.readed.let { readed ->
             loadNoticeContent(binding, true)
             coroutineScope {
-                if (mForceTime == 0) {
+                if (true) {
                     binding.readed.isClickable = true
                     return@coroutineScope
                 }

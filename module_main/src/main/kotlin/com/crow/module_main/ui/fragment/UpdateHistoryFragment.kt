@@ -54,8 +54,7 @@ class UpdateHistoryFragment : BaseMviFragment<MainFragmentUpdateHistoryBinding>(
      * ⦁ 2023-06-21 00:12:29 周三 上午
      */
     private fun navigateUp() {
-        if (arguments?.getBoolean("force_update") == true) FlowBus.with<Unit>(BaseEventEnum.UpdateApp.name).post(viewLifecycleOwner, Unit)
-        else parentFragmentManager.popSyncWithClear(Fragments.UpdateHistory.name)
+        parentFragmentManager.popSyncWithClear(Fragments.UpdateHistory.name)
     }
 
     /**

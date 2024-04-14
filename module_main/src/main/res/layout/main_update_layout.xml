@@ -73,28 +73,28 @@
 	</androidx.core.widget.NestedScrollView>
 
 	<com.google.android.material.button.MaterialButton
-		android:id="@+id/main_update_cancel"
+		android:id="@+id/main_update_go"
 		style="@style/Widget.Material3.Button.ElevatedButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_margin="@dimen/base_dp10"
-		android:text="@string/main_update_cancel"
+		android:text="@string/main_update_go"
 		app:cornerRadius="@dimen/base_dp7_5"
 		android:textColor="@color/mangax_black"
 		android:textStyle="bold"
 		app:backgroundTint="@color/mine_deep_purple_300"
 		app:iconTint="@null"
 		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintEnd_toStartOf="@+id/main_update_go"
+		app:layout_constraintEnd_toStartOf="@+id/main_update_cancel"
 		app:rippleColor="@color/mangax_grey_500" />
 
 	<com.google.android.material.button.MaterialButton
-		android:id="@+id/main_update_go"
+		android:id="@+id/main_update_cancel"
 		style="@style/Widget.Material3.Button.ElevatedButton.Icon"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_margin="@dimen/base_dp10"
-		android:text="@string/main_update_go"
+		android:text="@string/main_update_cancel"
 		app:cornerRadius="@dimen/base_dp7_5"
 		android:textColor="@color/mangax_black"
 		app:rippleColor="@color/mangax_grey_500"
@@ -114,7 +114,7 @@
 		app:icon="@drawable/mine_ic_update_history_24dp"
 		app:rippleColor="@color/mangax_grey_500"
 		app:backgroundTint="@color/mine_deep_purple_300"
-		app:layout_constraintEnd_toEndOf="@+id/main_update_go"
+		app:layout_constraintEnd_toEndOf="@+id/main_update_cancel"
 		app:layout_constraintTop_toTopOf="@+id/main_update_title" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
